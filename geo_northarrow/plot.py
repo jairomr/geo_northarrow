@@ -55,7 +55,7 @@ def add_north_arrow(ax, scale=1, xlim_pos=.9, ylim_pos=.8, xT=None, yT=None, col
         y_min = min([y for x, y in a + b + n_points]) - padding
         y_max = max([y for x, y in a + b + n_points]) + padding
         
-        rect = Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, facecolor=bg_color, edgecolor='none', zorder=-1)
+        rect = Rectangle((x_min, y_min), x_max - x_min, y_max - y_min, facecolor=bg_color, edgecolor='none')
         ax.add_patch(rect)
 
 
